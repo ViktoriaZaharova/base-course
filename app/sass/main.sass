@@ -1,0 +1,348 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home
+  position: relative
+  background: url("../img/bg1.jpg") no-repeat center
+    size: cover
+  padding: 294px 0 132px
+  z-index: 1
+  color: #fff
+  overflow: hidden
+  .btn
+    margin: 72px 0 94px
+
+.home-img
+  position: absolute
+  right: 0
+  bottom: -195px
+  z-index: -1
+  max-width: 1048px
+
+.home-content
+  max-width: 850px
+  width: 100%
+
+.name-author
+  font-size: 58px
+  font-weight: bold
+
+.home-description
+  max-width: 720px
+  span
+    color: #b1bedd
+    font-size: 37px
+    font-weight: 300
+    letter-spacing: 0.37px
+    display: block
+  p
+    letter-spacing: 0.49px
+    color: #fefefe
+    text-transform: uppercase
+    font-weight: 800
+    font-size: 49px
+    margin: 0 0 30px
+
+.date-wrapper
+  display: flex
+  align-items: center
+  font-size: 33px
+  color: #fffefe
+
+.date
+  color: #fffefe
+  font-size: 33px
+  font-weight: 800
+  letter-spacing: 0.33px
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  padding: 0 35px 0 0
+  margin: 0 32px 0 0
+  border:
+    right: solid 3px #fff
+  &-text
+    max-width: 230px
+  &-icon
+    @include d-flex
+    margin: 0 30px 0 0
+    width: 97px
+
+.slogan
+  letter-spacing: 0.33px
+  max-width: 420px
+  text-transform: uppercase
+/*==========  section home end  ==========*/
+
+/*==========  section form-whom ==========*/
+.for-whom
+  padding: 141px 0 173px
+  h3
+    text-align: center
+    font-size: 55px
+    font-weight: bold
+    line-height: 1.15
+    letter-spacing: -0.44px
+
+.for-whom-box
+  margin: 0 0 80px
+  font-weight: 300
+  &__icon
+    margin: 0 0 35px
+    height: 106px
+    img
+      max-height: 100%
+
+.about-course
+  text-align: center
+  margin: 64px auto 152px
+  font-size: 40px
+  letter-spacing: -0.32px
+  h3
+    margin: 0 0 30px
+
+.course-result
+  margin: 0 0 100px
+
+.list-check
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 40px
+  li
+    width: 54%
+    position: relative
+    margin: 0 0 42px
+    padding: 0 0 0 80px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 64px
+      height: 64px
+      background: url("../img/check.png") no-repeat center
+        size: 100%
+    &:nth-child(even)
+      width: 46%
+
+.course-result
+  h3
+    margin: 0 auto 85px
+    color: $accent
+/*==========  section end  ==========*/
+
+/*==========  section advantages ==========*/
+.advantages
+  margin: 165px 0 28px
+  h2
+    margin: 0 auto 156px
+
+.advantages-box
+  font-weight: 300
+  display: flex
+  align-items: flex-start
+  margin: 0 0 154px
+  &__icon
+    @include d-flex
+  &__text
+    width: calc(100% - 288px)
+    padding: 0 0 0 17px
+  h3
+    font-size: 30px
+    font-weight: bold
+    text-transform: uppercase
+    color: $accent
+    margin: 0 0 20px
+/*==========  section advantages end  ==========*/
+
+/*==========  section teacher ==========*/
+.teacher
+  padding: 167px 0 182px
+  h2
+    margin: 0 0 158px
+
+.teacher-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.teacher-content
+  width: calc(100% - 715px)
+  padding: 0 70px 0 0
+  h3
+    margin: 0 0 75px
+    font-size: 55px
+    line-height: 1
+
+.list-star
+  margin: 0 0 70px
+  li
+    position: relative
+    margin: 0 0 40px
+    display: flex
+    align-items: center
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      @include d-flex
+      width: 36px
+      min-width: 36px
+      height: 36px
+      margin: 0 22px 0 0
+      background: url("../img/star.png") no-repeat center
+        size: 100%
+
+.teacher-photo
+  max-width: 715px
+  width: 100%
+  @include d-flex
+  img
+    width: 100%
+
+
+/*==========  section teacher end  ==========*/
+
+/*==========  section programs ==========*/
+.programs
+  padding: 163px 0 154px
+  h2
+    margin: 0 auto 162px
+  .btn
+    margin: 80px auto 0
+
+.program-box
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  background: #fff
+  box-shadow: 0 0 50px 0 rgba(189, 189, 189, 0.55)
+  padding: 66px 65px 58px 74px
+  margin: 0 0 67px
+  &:last-child
+    margin: 0
+  &__head
+    border:
+      right: solid 3px #0d67eb
+    max-width: 390px
+    width: 100%
+  &__body
+    width: calc(100% - 390px)
+    padding: 0 0 0 64px
+    font-weight: 300
+  h3
+    text-transform: uppercase
+    color: $accent
+    font-weight: bold
+    margin: 0 0 30px
+  &__name
+    font-weight: 800
+    font-size: 42px
+    text-transform: uppercase
+    margin: 0 0 84px
+
+.list-info
+  li
+    margin: 0 0 50px
+    display: flex
+    align-items: center
+    &:last-child
+      margin: 0
+  &__icon
+    width: 70px
+    min-width: 70px
+    margin: 0 33px 0 0
+  &__text
+    span
+      display: block
+    p
+      font-weight: bold
+      color: #0d67eb
+
+.list-dots
+  li
+    position: relative
+    margin: 0 0 10px
+    display: flex
+    align-items: flex-start
+    &:last-child
+      margin: 0
+    &:before
+      content: '•'
+      display: inline-block
+      margin: 0 5px 0 0
+      font-weight: bold
+      font-size: 33px
+      color: $accent
+
+.link-toggle
+  color: #0d67eb
+  text-transform: uppercase
+  font-size: 23px
+  font-weight: bold
+  text-decoration: underline
+  &:hover
+    color: $hover
+
+/*==========  section programs end  ==========*/
+
+/*==========  section format ==========*/
+.format
+  padding: 168px 0 115px
+  h2
+    margin: 0 auto 61px
+    max-width: 870px
+
+.format-description
+  text-align: center
+  color: #0d67eb
+  margin: 0 auto 112px
+  letter-spacing: 0.17px
+  max-width: 1070px
+
+/*==========  section format end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
