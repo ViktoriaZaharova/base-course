@@ -369,24 +369,273 @@
   letter-spacing: 0.17px;
   max-width: 1070px; }
 
+.list-number {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 300; }
+  .list-number li {
+    width: 50%;
+    margin: 0 0 115px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .list-number .number {
+    background: #1955ff;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 28px 0 0;
+    width: 98px;
+    height: 98px;
+    min-width: 98px;
+    color: #fffefe;
+    font-size: 48px; }
+  .list-number .text {
+    max-width: 495px; }
+
 /*==========  section format end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section steps ==========*/
+.steps {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 165px 0 177px; }
+  .steps h2 {
+    max-width: 810px; }
+  .steps .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .steps .col-2 {
+    position: relative; }
+
+.steps-box {
+  text-align: center;
+  font-weight: 300;
+  margin: 0 auto 53px;
+  max-width: 420px; }
+  .steps-box__icon {
+    margin: 0 auto 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .steps-box p {
+    margin: 0 0 30px; }
+    .steps-box p:last-child {
+      margin: 0; }
+  .steps-box .number {
+    position: absolute;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #0d67eb;
+    color: #eee;
+    font-size: 30.5px;
+    font-weight: normal;
+    right: -25px;
+    top: 20px; }
+
+.steps-box2 {
+  max-width: 500px;
+  margin: 0 auto; }
+  .steps-box2 .steps-box__icon {
+    margin: 0 auto 41px; }
+  .steps-box2 .number {
+    right: auto;
+    left: -25px; }
+    .steps-box2 .number:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 210px;
+      background: #0d67eb;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      top: -220px; }
+
+/*==========  section steps end  ==========*/
+/*==========  section payments ==========*/
+.payments {
+  padding: 167px 0 180px;
+  position: relative;
+  z-index: 1; }
+  .payments h2 {
+    color: #fff;
+    margin: 0 auto 170px;
+    max-width: 880px; }
+
+.payments-card {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 40px 0 rgba(84, 84, 84, 0.25);
+          box-shadow: 0 0 40px 0 rgba(84, 84, 84, 0.25);
+  border: solid 1px #fff;
+  background-color: #fff;
+  padding: 69px 25px 85px;
+  font-size: 30px; }
+  .payments-card h3 {
+    font-size: 48px;
+    margin: 0 auto 36px; }
+  .payments-card .btn {
+    margin: auto auto 0;
+    font-size: 18px;
+    padding: 27px 10px;
+    width: 100%;
+    max-width: 330px; }
+  .payments-card .box-text {
+    font-weight: 300;
+    margin: 0 0 80px; }
+  .payments-card__price {
+    margin: 0 auto 45px;
+    font-size: 48px; }
+  .payments-card h4 {
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2; }
+
+/*==========  section payments end  ==========*/
+/*==========  section callback ==========*/
+.callback {
+  padding: 131px 0;
+  background: #fff;
+  position: relative;
+  z-index: 1; }
+  .callback .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .callback h2 {
+    font-size: 33px;
+    margin: 0; }
+  .callback .btn {
+    font-size: 18px;
+    padding: 27px 10px;
+    max-width: 330px;
+    width: 100%; }
+
+/*==========  section callback end  ==========*/
+/*==========  section question ==========*/
+.question {
+  padding: 162px 0 125px; }
+  .question h2 {
+    margin: 0 auto 151px;
+    color: #fff; }
+
+.panel_heading {
+  width: 100%;
+  margin: 0 0 20px;
+  font-weight: 300; }
+  .panel_heading:last-child {
+    margin: 0; }
+  .panel_heading.in .accordion-icon:before {
+    width: 0; }
+
+.block_hover {
+  padding: 38px 50px 41px;
+  color: #fff;
+  display: none; }
+
+.block_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 23px 50px;
+  color: #010101;
+  background: #fff;
+  cursor: pointer; }
+
+.accordion-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #1955ff;
+  width: 54px;
+  height: 54px;
+  position: relative;
+  min-width: 54px; }
+  .accordion-icon:before, .accordion-icon:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .accordion-icon:before {
+    width: 2px;
+    height: 30px; }
+  .accordion-icon:after {
+    width: 30px;
+    height: 2px; }
+
+/*==========  section question end  ==========*/

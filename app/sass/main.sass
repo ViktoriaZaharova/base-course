@@ -303,46 +303,212 @@
   letter-spacing: 0.17px
   max-width: 1070px
 
+.list-number
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-weight: 300
+  li
+    width: 50%
+    margin: 0 0 115px
+    display: flex
+    align-items: center
+  .number
+    background: $accent
+    border-radius: 50%
+    @include d-flex
+    margin: 0 28px 0 0
+    width: 98px
+    height: 98px
+    min-width: 98px
+    color: #fffefe
+    font-size: 48px
+  .text
+    max-width: 495px
 /*==========  section format end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section steps ==========*/
+.steps
+  background: #fff
+  position: relative
+  z-index: 1
+  padding: 165px 0 177px
+  h2
+    max-width: 810px
 
-/*==========  section end  ==========*/
+  .row
+    flex-direction: column
+    justify-content: space-between
+  .col-2
+    position: relative
 
-/*==========  section  ==========*/
+.steps-box
+  text-align: center
+  font-weight: 300
+  margin: 0 auto 53px
+  max-width: 420px
+  &__icon
+    margin: 0 auto 22px
+    @include d-flex
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+  .number
+    position: absolute
+    border-radius: 50%
+    @include d-flex
+    width: 50px
+    height: 50px
+    background: #0d67eb
+    color: #eee
+    font-size: 30.5px
+    font-weight: normal
+    right: -25px
+    top: 20px
 
-/*==========  section end  ==========*/
+
+.steps-box2
+  max-width: 500px
+  margin: 0 auto
+  .steps-box__icon
+    margin: 0 auto 41px
+  .number
+    right: auto
+    left: -25px
+    &:before
+      content: ''
+      position: absolute
+      width: 4px
+      height: 210px
+      background: #0d67eb
+      left: 50%
+      transform: translate(-50%,0)
+      top: -220px
+/*==========  section steps end  ==========*/
+
+/*==========  section payments ==========*/
+.payments
+  padding: 167px 0 180px
+  position: relative
+  z-index: 1
+  h2
+    color: #fff
+    margin: 0 auto 170px
+    max-width: 880px
+
+.payments-card
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  border-radius: 5px
+  box-shadow: 0 0 40px 0 rgba(84, 84, 84, 0.25)
+  border: solid 1px #fff
+  background-color: #fff
+  padding: 69px 25px 85px
+  font-size: 30px
+  h3
+    font-size: 48px
+    margin: 0 auto 36px
+  .btn
+    margin: auto auto 0
+    font-size: 18px
+    padding: 27px 10px
+    width: 100%
+    max-width: 330px
+  .box-text
+    font-weight: 300
+    margin: 0 0 80px
+  &__price
+    margin: 0 auto 45px
+    font-size: 48px
+  h4
+    font-weight: 800
+    text-transform: uppercase
+    line-height: 1.2
+/*==========  section payments end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section callback ==========*/
+.callback
+  padding: 131px 0
+  background: #fff
+  position: relative
+  z-index: 1
+  .container
+    justify-content: space-between
+    align-items: center
+  h2
+    font-size: 33px
+    margin: 0
+  .btn
+    font-size: 18px
+    padding: 27px 10px
+    max-width: 330px
+    width: 100%
 
-/*==========  section end  ==========*/
+/*==========  section callback end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section question ==========*/
+.question
+  padding: 162px 0 125px
+  h2
+    margin: 0 auto 151px
+    color: #fff
 
-/*==========  section end  ==========*/
+.panel_heading
+  width: 100%
+  margin: 0 0 20px
+  font-weight: 300
+  &:last-child
+    margin: 0
+  &.in
+    .accordion-icon
+      &:before
+        width: 0
 
-/*==========  section  ==========*/
+.block_hover
+  padding: 38px 50px 41px
+  color: #fff
+  display: none
 
-/*==========  section end  ==========*/
+.block_title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 23px 50px
+  color: #010101
+  background: #fff
+  cursor: pointer
 
-/*==========  section  ==========*/
+.accordion-icon
+  @include d-flex
+  border-radius: 50%
+  background: $accent
+  width: 54px
+  height: 54px
+  position: relative
+  min-width: 54px
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: #fff
+    transform: translate(-50%,-50%)
+    top: 50%
+    left: 50%
+    transition: .3s ease
+  &:before
+    width: 2px
+    height: 30px
+  &:after
+    width: 30px
+    height: 2px
 
-/*==========  section end  ==========*/
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
+/*==========  section question end  ==========*/
