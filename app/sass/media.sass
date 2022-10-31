@@ -1,27 +1,31 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-@media only screen and (max-width : 1300px)
+@media only screen and (max-width: 1300px)
   .home-img
     max-width: 900px
 
   .advantages
     margin: 149px 0 47px
+
     h2
       margin: 0 auto 136px
 
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width: 1200px)
   .col-4
     width: 50%
 
   .for-whom-box
     text-align: center
     margin: 0 0 72px
+
     &__icon
       margin: 0 auto 36px
       @include d-flex
+
     br
       display: none
+
     &__text
       max-width: 490px
       margin: 0 auto
@@ -29,6 +33,7 @@
   .about-course
     margin: 51px auto 112px
     letter-spacing: -0.4px
+
     h3
       margin: 0 auto 98px
 
@@ -37,16 +42,20 @@
       padding: 0 0 0 90px
       width: 100%
       margin: 0 0 43px
+
       &:nth-child(even)
         width: 100%
+
       &:first-child, &:nth-child(3)
         order: -1
 
   .advantages-box
     margin: 0 0 118px
     justify-content: center
+
     &__text
       max-width: 350px
+
       br
         display: none
 
@@ -64,26 +73,29 @@
     margin: 0 auto 222px
     padding: 0 0 100px
     position: relative
+
     .number
       right: auto
       left: 50%
-      transform: translate(-50%,0)
+      transform: translate(-50%, 0)
       bottom: 0
       top: auto
 
   .steps-box2
     margin: 0 auto
     padding: 100px 0 0
+
     .number
       top: 10px
       left: 50%
-      transform: translate(-50%,0)
+      transform: translate(-50%, 0)
 
   .col-3
     width: 50%
 
   .payments
     padding: 167px 0 90px
+
     .col-3
       margin: 0 0 90px
 
@@ -93,18 +105,23 @@
 
   .callback
     padding: 152px 0 157px
+
     .container
       flex-direction: column
       align-items: center
+
     .btn
       margin: 39px auto 0
+
     h3
       text-align: center
+
       strong
         display: block
 
   footer
     margin: 0 0 766px
+
     .box-text
       margin: 52px auto 137px
       max-width: 540px
@@ -112,8 +129,10 @@
   body
     &:before
       height: 6423px
+      background: url("../img/bg2-tablet.jpg") no-repeat center top
+        size: cover
 
-@media only screen and (max-width : 992px)
+@media only screen and (max-width: 992px)
   header
     a
       font-size: 24px
@@ -128,6 +147,7 @@
 
   .home
     padding: 237px 0 131px
+
     .btn
       margin: 73px 0 84px
 
@@ -136,11 +156,15 @@
 
   .home-description
     max-width: 380px
+
     p
       font-size: 36px
+
     span
       font-size: 33px
       display: none
+      color: #fff
+
     .d-tablet
       display: block
 
@@ -178,8 +202,10 @@
 
   .teacher
     padding: 166px 0 163px
+
     h2
       margin: 0 auto 70px
+
     .btn
       margin: 0 auto
 
@@ -189,6 +215,7 @@
   .teacher-content
     width: 100%
     padding: 0
+
     h3
       margin: 0 auto 55px
       text-align: center
@@ -197,21 +224,26 @@
   .teacher-photo
     margin: 0 auto 152px
     max-width: 657px
+
     &.d-pc
       display: none
+
     &.d-tablet
       display: flex
 
   .programs
     padding: 141px 0 150px
+
     h2
       margin: 0 auto 136px
+
     .btn
       margin: 74px auto 0
 
   .program-box
     margin: 0 0 75px
     padding: 66px 42px 68px
+
     &__head
       max-width: 100%
       display: flex
@@ -220,9 +252,11 @@
       margin: 0 0 54px
       border: none
         bottom: 4px solid #0d67eb
+
     &__body
       width: 100%
       padding: 0
+
     &__name
       margin: 0 auto 0 0
 
@@ -234,6 +268,7 @@
 
   .format
     padding: 135px 0 155px
+
     h2
       margin: 0 auto 47px
 
@@ -243,22 +278,28 @@
       width: 100%
       margin: 0 0 78px
       justify-content: center
+
       &:last-child
         margin: 0
+
     br
       display: none
+
     .text
       max-width: 500px
+
     .number
       margin: 0 33px 0 0
 
   .steps
     padding: 146px 0 154px
+
     h2
       margin: 0 auto 136px
 
   .payments
     padding: 167px 0 87px
+
     h2
       margin: 0 auto 108px
 
@@ -283,13 +324,19 @@
     padding: 30px 45px
 
 
-@media only screen and (max-width : 768px)
+@media only screen and (max-width: 768px)
   header
     padding: 32px 0
+
     a
       display: none
+
     .logo
       display: flex
+
+  .home
+    background: url("../img/bg1-tablet.jpg") no-repeat center
+      size: cover
 
   .home-img
     bottom: 75px
@@ -313,6 +360,7 @@
     h3
       margin: 0 auto
       max-width: 610px
+
       br
         display: none
 
@@ -325,6 +373,7 @@
     h3
       max-width: none
       margin: 0 auto 40px
+
       br
         display: block
 
@@ -345,15 +394,398 @@
       max-width: 500px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 576px)
-	/**/
+@media only screen and (max-width: 670px)
+  .logo
+    max-width: 221px
+
+  header
+    padding: 20px 0
+
+  .home-img
+    max-width: 464px
+    bottom: 70px
+    left: auto
+    right: 0
+
+  h1
+    font-size: 41px
+    margin: 31px 0 41px
+
+  .name-author
+    font-size: 38px
+    max-width: 330px
+
+  .home
+    padding: 149px 0 82px
+
+    .btn
+      margin: 45px 0 51px
+
+  .home-description
+    max-width: 240px
+
+    p
+      font-size: 22.5px
+
+    span
+      font-size: 20px
+      max-width: 180px
+
+  .btn
+    font-size: 13px
+    padding: 16px 27px
+
+  .date-wrapper
+    font-size: 22.5px
+
+  .slogan
+    max-width: 290px
+
+  .date
+    font-size: 22.5px
+    margin: 0 0 20px
+
+  .date-text
+    max-width: 160px
+
+  .date-icon
+    max-width: 73px
+    margin: 0 19px 0 0
+
+  .for-whom
+    padding: 75px 0 88px
+
+    h3
+      font-size: 34.5px
+
+  .for-whom-box
+    margin: 0 0 39px
+
+    &__text
+      max-width: 310px
+
+    &__icon
+      margin: 0 auto 20px
+      height: 66px
+
+
+  .about-course
+    font-size: 25px
+    margin: 36px auto 69px
+
+    h3
+      letter-spacing: -0.35px
+      margin: 0 auto 30px
+
+  .course-result
+    margin: 0 0 68px
+
+    h3
+      margin: 0 auto 60px
+
+  .list-check
+    font-size: 25px
+
+    li
+      padding: 0 0 0 57px
+      margin: 0 0 27px
+
+      &:last-child
+        margin: 0
+
+      &:before
+        width: 39px
+        height: 39px
+
+
+  h2
+    font-size: 34.5px
+    margin: 0 auto 57px
+
+  body
+    font-size: 20.5px
+
+    &:before
+      height: 4015px
+      background: url("../img/bg2-480.jpg") no-repeat center top
+        size: cover
+
+  .advantages
+    margin: 93px 0 25px
+
+    h2
+      margin: 0 auto 85px
+
+  .advantages-box
+    font-size: 19px
+    margin: 0 0 70px
+
+    &__icon
+      max-width: 163px
+
+    &__text
+      max-width: 220px
+
+    h3
+      font-size: 20.5px
+
+  .teacher
+    padding: 105px 0 102px
+
+    h2
+      margin: 0 auto 44px
+
+  .teacher-content
+    h3
+      margin: 0 auto 93px
+      font-size: 34.5px
+      max-width: 300px
+
+  .teacher-photo
+    margin: 0 auto 94px
+    max-width: 441px
+
+  .list-star
+    margin: 0 0 87px
+
+    li
+      margin: 0 0 30px
+
+      &:last-child
+        margin: 0
+
+      &:before
+        min-width: 23px
+        width: 23px
+        height: 23px
+        margin: 0 13px 0 0
+
+  .programs
+    padding: 88px 0 93px
+
+    h2
+      margin: 0 auto 84px
+
+    .btn
+      margin: 45px auto 0
+
+  .program-box
+    margin: 0 0 46px
+    padding: 42px 26px 42px 28px
+    font-size: 20.5px
+
+    &__head
+      padding: 0 0 34px
+      margin: 0 0 34px
+
+    &__name
+      font-size: 23.5px
+
+    h3
+      margin: 0 0 20px
+
+  .list-info
+    font-size: 20.5px
+
+    li
+      margin: 0 0 34px
+
+      &:last-child
+        margin: 0
+
+    &__text
+      max-width: 140px
+
+    &__icon
+      width: 44px
+      min-width: 44px
+      margin: 0 20px 0 0
+
+  .list-dots
+    li
+      &:before
+        font-size: 20.5px
+
+  .link-toggle
+    font-size: 14.5px
+
+  .format
+    padding: 87px 0 96px
+
+    h2
+      margin: 0 auto 29px
+      max-width: 420px
+
+  .format-description
+    font-size: 20.5px
+    max-width: 400px
+    margin: 0 auto 83px
+
+  .list-number
+    li
+      margin: 0 0 49px
+
+      &:last-child
+        margin: 0
+
+    .number
+      margin: 0 20px 0 0
+      width: 61px
+      height: 61px
+      min-width: 61px
+      font-size: 30px
+
+    .text
+      max-width: 310px
+
+  .steps
+    padding: 90px 0 95px
+
+    h2
+      margin: 0 auto 85px
+
+  .steps-box
+    margin: 0 auto 144px
+    padding: 0 0 60px
+
+    &__text
+      max-width: 260px
+      margin: 0 auto
+
+    &__icon
+      max-width: 63px
+      margin: 0 auto 14px
+
+    .number
+      width: 31px
+      height: 31px
+      font-size: 19px
+
+  .steps-box2
+    padding: 60px 0 0
+    margin: 0 auto
+
+    .steps-box__icon
+      margin: 0 auto 25px
+
+    .steps-box__text
+      max-width: 310px
+      margin: 0 auto
+
+    .number
+      top: 0
+
+      &:before
+        width: 3px
+        height: 131px
+        top: -140px
+
+  .payments
+    padding: 106px 0 53px
+
+    .col-3
+      margin: 0 0 57px
+
+    h2
+      margin: 0 auto 67px
+      max-width: 320px
+
+  .payments-card
+    min-height: 351px
+    padding: 43px 20px 53px
+    max-width: 263px
+
+    .btn
+      font-size: 11px
+      padding: 17px 10px
+
+    h3
+      font-size: 30px
+      margin: 0 0 22px
+
+    &__price
+      font-size: 30px
+      margin: 0 auto 27px
+
+    h4
+      font-size: 18.5px
+
+    .box-text
+      font-size: 18.5px
+
+  .callback
+    padding: 95px 0 98px
+
+    h3
+      font-size: 20.5px
+
+    .btn
+      max-width: 208px
+      padding: 17px 20px
+      margin: 23px auto 0
+      font-size: 11px
+
+  .question
+    padding: 86px 0 73px
+
+    h2
+      margin: 0 auto 94px
+
+  .block_title
+    padding: 14px 25px
+
+  .block_hover
+    padding: 20px 25px
+
+  .panel_heading
+    margin: 0 0 10px
+
+  .accordion-icon
+    width: 35px
+    height: 35px
+    min-width: 35px
+
+    &:after
+      width: 20px
+
+    &:before
+      height: 20px
+
+  footer
+    margin: 0 0 478px
+
+    h3
+      font-size: 34px
+
+    .box-text
+      margin: 32px auto 84px
+      max-width: 340px
+
+  .list-social
+    li
+      margin: 0 23px 0 0
+
+      &:last-child
+        margin: 0
+
+      a
+        width: 54px
+        height: 54px
+        min-width: 54px
+        padding: 12px
+
+@media only screen and (max-width: 420px)
+  h1
+    font-size: 34px
+
+  .home-img
+    max-width: 400px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 480px)
+  /**/
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 480px)
-	/**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 370px)
+@media only screen and (max-width: 370px)
   /**/
