@@ -97,9 +97,11 @@
   text-align: center
   margin: 64px auto 152px
   font-size: 40px
-  letter-spacing: -0.32px
   h3
     margin: 0 0 30px
+    letter-spacing: -0.32px
+    br
+      display: none
 
 .course-result
   margin: 0 0 100px
@@ -167,6 +169,7 @@
   display: flex
   align-items: flex-start
   flex-wrap: wrap
+  width: 100%
 
 .teacher-content
   width: calc(100% - 715px)
@@ -178,6 +181,7 @@
 
 .list-star
   margin: 0 0 70px
+  font-weight: 300
   li
     position: relative
     margin: 0 0 40px
@@ -201,6 +205,8 @@
   @include d-flex
   img
     width: 100%
+  &.d-tablet
+    display: none
 
 
 /*==========  section teacher end  ==========*/
@@ -482,7 +488,6 @@
   display: flex
   align-items: center
   justify-content: space-between
-  flex-wrap: wrap
   padding: 23px 50px
   color: #010101
   background: #fff

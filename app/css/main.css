@@ -110,10 +110,12 @@
 .about-course {
   text-align: center;
   margin: 64px auto 152px;
-  font-size: 40px;
-  letter-spacing: -0.32px; }
+  font-size: 40px; }
   .about-course h3 {
-    margin: 0 0 30px; }
+    margin: 0 0 30px;
+    letter-spacing: -0.32px; }
+    .about-course h3 br {
+      display: none; }
 
 .course-result {
   margin: 0 0 100px; }
@@ -202,7 +204,8 @@
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  width: 100%; }
 
 .teacher-content {
   width: calc(100% - 715px);
@@ -213,7 +216,8 @@
     line-height: 1; }
 
 .list-star {
-  margin: 0 0 70px; }
+  margin: 0 0 70px;
+  font-weight: 300; }
   .list-star li {
     position: relative;
     margin: 0 0 40px;
@@ -257,6 +261,8 @@
           justify-content: center; }
   .teacher-photo img {
     width: 100%; }
+  .teacher-photo.d-tablet {
+    display: none; }
 
 /*==========  section teacher end  ==========*/
 /*==========  section programs ==========*/
@@ -598,8 +604,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 23px 50px;
   color: #010101;
   background: #fff;

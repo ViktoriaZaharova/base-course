@@ -1,55 +1,359 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1300px)
+  .home-img
+    max-width: 900px
 
-/* Large Devices, Wide Screens */
+  .advantages
+    margin: 149px 0 47px
+    h2
+      margin: 0 auto 136px
+
 @media only screen and (max-width : 1200px)
-	/**/
+  .col-4
+    width: 50%
 
+  .for-whom-box
+    text-align: center
+    margin: 0 0 72px
+    &__icon
+      margin: 0 auto 36px
+      @include d-flex
+    br
+      display: none
+    &__text
+      max-width: 490px
+      margin: 0 auto
 
-/* Medium Devices, Desktops */
+  .about-course
+    margin: 51px auto 112px
+    letter-spacing: -0.4px
+    h3
+      margin: 0 auto 98px
+
+  .list-check
+    li
+      padding: 0 0 0 90px
+      width: 100%
+      margin: 0 0 43px
+      &:nth-child(even)
+        width: 100%
+      &:first-child, &:nth-child(3)
+        order: -1
+
+  .advantages-box
+    margin: 0 0 118px
+    justify-content: center
+    &__text
+      max-width: 350px
+      br
+        display: none
+
+  .col-2
+    width: 100%
+
+  .teacher-photo
+    max-width: 500px
+
+  .teacher-content
+    width: calc(100% - 500px)
+    padding: 0 20px 0 0
+
+  .steps-box
+    margin: 0 auto 222px
+    padding: 0 0 100px
+    position: relative
+    .number
+      right: auto
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: 0
+      top: auto
+
+  .steps-box2
+    margin: 0 auto
+    padding: 100px 0 0
+    .number
+      top: 10px
+      left: 50%
+      transform: translate(-50%,0)
+
+  .col-3
+    width: 50%
+
+  .payments
+    padding: 167px 0 90px
+    .col-3
+      margin: 0 0 90px
+
+  .payments-card
+    max-width: 420px
+    margin: 0 auto
+
+  .callback
+    padding: 152px 0 157px
+    .container
+      flex-direction: column
+      align-items: center
+    .btn
+      margin: 39px auto 0
+    h3
+      text-align: center
+      strong
+        display: block
+
+  footer
+    margin: 0 0 766px
+    .box-text
+      margin: 52px auto 137px
+      max-width: 540px
+
+  body
+    &:before
+      height: 6423px
+
 @media only screen and (max-width : 992px)
-	/**/
+  header
+    a
+      font-size: 24px
+
+  h1
+    font-size: 66px
+    margin: 49px 0 68px
+
+  .name-author
+    font-size: 61px
+    max-width: 520px
+
+  .home
+    padding: 237px 0 131px
+    .btn
+      margin: 73px 0 84px
+
+  .home-img
+    max-width: 800px
+
+  .home-description
+    max-width: 380px
+    p
+      font-size: 36px
+    span
+      font-size: 33px
+      display: none
+    .d-tablet
+      display: block
+
+  .date-wrapper
+    flex-direction: column
+    align-items: flex-start
+    padding: 0
+    font-size: 36px
+
+  .date
+    padding: 0
+    margin: 0 0 32px
+    border: none
+    font-size: 36px
+    line-height: 1.22
+
+  .date-text
+    max-width: 250px
+
+  .date-icon
+    max-width: 115px
+
+  .slogan
+    max-width: 450px
+    line-height: 1.22
+
+  .for-whom
+    padding: 119px 0 140px
+
+  h2
+    margin: 0 auto 92px
+
+  .course-result
+    margin: 0 0 65px
+
+  .teacher
+    padding: 166px 0 163px
+    h2
+      margin: 0 auto 70px
+    .btn
+      margin: 0 auto
+
+  .list-star
+    margin: 0 0 140px
+
+  .teacher-content
+    width: 100%
+    padding: 0
+    h3
+      margin: 0 auto 55px
+      text-align: center
+      max-width: 470px
+
+  .teacher-photo
+    margin: 0 auto 152px
+    max-width: 657px
+    &.d-pc
+      display: none
+    &.d-tablet
+      display: flex
+
+  .programs
+    padding: 141px 0 150px
+    h2
+      margin: 0 auto 136px
+    .btn
+      margin: 74px auto 0
+
+  .program-box
+    margin: 0 0 75px
+    padding: 66px 42px 68px
+    &__head
+      max-width: 100%
+      display: flex
+      align-items: flex-start
+      padding: 0 0 54px 0
+      margin: 0 0 54px
+      border: none
+        bottom: 4px solid #0d67eb
+    &__body
+      width: 100%
+      padding: 0
+    &__name
+      margin: 0 auto 0 0
+
+  .list-info__text
+    max-width: 210px
+
+  .link-toggle
+    margin: 0 auto
+
+  .format
+    padding: 135px 0 155px
+    h2
+      margin: 0 auto 47px
 
 
-/* Small Devices, Tablets */
+  .list-number
+    li
+      width: 100%
+      margin: 0 0 78px
+      justify-content: center
+      &:last-child
+        margin: 0
+    br
+      display: none
+    .text
+      max-width: 500px
+    .number
+      margin: 0 33px 0 0
+
+  .steps
+    padding: 146px 0 154px
+    h2
+      margin: 0 auto 136px
+
+  .payments
+    padding: 167px 0 87px
+    h2
+      margin: 0 auto 108px
+
+  .col-3
+    width: 100%
+
+  .payments-card
+    min-height: 561px
+
+  footer
+    h3
+      br
+        display: block
+
+  .question
+    padding: 137px 0 126px
+
+  .block_title
+    padding: 23px 45px
+
+  .block_title
+    padding: 30px 45px
+
+
 @media only screen and (max-width : 768px)
-	/**/
+  header
+    padding: 32px 0
+    a
+      display: none
+    .logo
+      display: flex
 
+  .home-img
+    bottom: 75px
+    max-width: 742px
+    right: auto
+    left: 26px
+
+  .d-pc
+    display: none
+
+  .d-tablet
+    display: block
+
+  .container
+    padding: 0 15px
+
+  .col-4
+    width: 100%
+
+  .for-whom
+    h3
+      margin: 0 auto
+      max-width: 610px
+      br
+        display: none
+
+  .course-result
+    h3
+      max-width: 645px
+      margin: 0 auto 98px
+
+  .about-course
+    h3
+      max-width: none
+      margin: 0 auto 40px
+      br
+        display: block
+
+  .format
+    h2
+      max-width: 645px
+
+  .format-description
+    margin: 0 auto 134px
+    max-width: 600px
+
+  .steps
+    h2
+      max-width: 650px
+
+  .payments
+    h2
+      max-width: 500px
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+	/**/
+
+
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 480px)
 	/**/
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+@media only screen and (max-width : 370px)
+  /**/

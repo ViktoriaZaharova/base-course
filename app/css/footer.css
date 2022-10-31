@@ -18,6 +18,8 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     text-shadow: 0 0 30px rgba(71, 77, 156, 0.95); }
+    footer h3 br {
+      display: none; }
 
 /*==========  section footer end  ==========*/
 /*==========  section modal ==========*/
