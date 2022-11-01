@@ -1,9 +1,9 @@
 @import "vars"
 
 /*==========  section footer ==========*/
-footer
+.footer
   color: #fff
-  margin: 0 0 580px
+  margin: 0 0 90px
   .box-text
     margin: 50px auto 104px
     text-align: center
@@ -23,6 +23,62 @@ footer
     text-shadow: 0 0 30px rgba(#474d9c, .95)
     br
       display: none
+
+.payment-error
+  margin: 130px auto 0
+  width: 100%
+  padding: 63px 66px 52px 67px
+  max-width: 1070px
+  box-sizing: border-box
+  text-align: center
+  font-size: 30px
+  font-weight: 800
+  color: #fff
+  position: relative
+  z-index: 1
+  p
+    margin: 0 auto 25px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    background: rgba(#11359e, 0.28)
+    mix-blend-mode: multiply
+
+.payment-error-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: center
+
+.link-message
+  display: flex
+  align-items: center
+  margin: 0 35px 0 0
+  font-size: 22px
+  font-weight: 800
+  background: $accent
+  border-radius: 30px
+  padding: 16px
+  box-sizing: border-box
+  text-transform: uppercase
+  color: #fff
+  &:hover
+    background: #4971e1
+
+  &:last-child
+    margin: 0
+
+  img
+    margin: 0 11px 0 0
+    width: 27px
+
 /*==========  section footer end  ==========*/
 
 

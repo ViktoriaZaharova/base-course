@@ -1,4 +1,9 @@
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1460px) {
+  .home-img {
+    max-width: 1100px;
+    bottom: -195px; } }
+
 @media only screen and (max-width: 1300px) {
   .home-img {
     max-width: 900px; }
@@ -104,15 +109,22 @@
       text-align: center; }
       .callback h3 strong {
         display: block; }
-  footer {
-    margin: 0 0 766px; }
-    footer .box-text {
-      margin: 52px auto 137px;
-      max-width: 540px; }
+  .footer .box-text {
+    margin: 52px auto 137px;
+    max-width: 540px; }
   body:before {
     height: 6423px;
     background: url("../img/bg2-tablet.jpg") no-repeat center top;
-      background-size: cover; } }
+      background-size: cover; }
+  .reviews__list-item-inner {
+    padding: 0 60px; }
+  .reviews__list-media {
+    width: 200px;
+    min-width: 200px;
+    height: 200px; }
+  .reviews__list-text {
+    font-size: 22px;
+    padding-left: 30px; } }
 
 @media only screen and (max-width: 992px) {
   header a {
@@ -252,16 +264,48 @@
     width: 100%; }
   .payments-card {
     min-height: 561px; }
-  footer h3 br {
+  .footer h3 br {
     display: block; }
   .question {
     padding: 137px 0 126px; }
   .block_title {
     padding: 23px 45px; }
   .block_title {
-    padding: 30px 45px; } }
+    padding: 30px 45px; }
+  .payment-error {
+    padding: 40px;
+    font-size: 24px; }
+  .link-message {
+    font-size: 18px; }
+  .slick-arrow {
+    width: 20px;
+    height: 20px;
+    border-width: 2px; }
+    .slick-arrow.slick-prev, .slick-arrow.slick-next {
+      border-radius: 0; }
+  .slick-dots {
+    position: static;
+    padding-top: 30px; }
+  .reviews {
+    padding: 80px 0; }
+  .reviews__heading {
+    margin-top: 0;
+    text-align: center; }
+  .reviews__list {
+    padding-top: 60px; }
+  .reviews__list-item-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .reviews__list-text {
+    padding: 30px 0 0;
+    font-size: 20px;
+    text-align: center; } }
 
 @media only screen and (max-width: 768px) {
+  body:before {
+    height: 6923px; }
   header {
     padding: 32px 0; }
     header a {
@@ -307,7 +351,19 @@
   .steps h2 {
     max-width: 650px; }
   .payments h2 {
-    max-width: 500px; } }
+    max-width: 500px; }
+  .payment-error-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .link-message {
+    margin: 0 auto 20px; }
+    .link-message:last-child {
+      margin: 0 auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 670px) {
@@ -389,7 +445,7 @@
   body {
     font-size: 20.5px; }
     body:before {
-      height: 4015px;
+      height: 4915px;
       background: url("../img/bg2-480.jpg") no-repeat center top;
         background-size: cover; }
   .advantages {
@@ -564,13 +620,11 @@
       width: 20px; }
     .accordion-icon:before {
       height: 20px; }
-  footer {
-    margin: 0 0 478px; }
-    footer h3 {
-      font-size: 34px; }
-    footer .box-text {
-      margin: 32px auto 84px;
-      max-width: 340px; }
+  .footer h3 {
+    font-size: 34px; }
+  .footer .box-text {
+    margin: 32px auto 84px;
+    max-width: 340px; }
   .list-social li {
     margin: 0 23px 0 0; }
     .list-social li:last-child {
@@ -579,7 +633,17 @@
       width: 54px;
       height: 54px;
       min-width: 54px;
-      padding: 12px; } }
+      padding: 12px; }
+  .payment-error {
+    margin: 60px auto 0; }
+  .link-message {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .slick-dots li {
+    width: 20px;
+    height: 20px; } }
 
 @media only screen and (max-width: 420px) {
   h1 {
@@ -599,7 +663,17 @@
     font-size: 24px;
     margin: 0 auto 20px; }
   .modal__wrapper .box-text {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .slick-arrow {
+    display: none !important;
+    visibility: hidden; }
+  .reviews__list-item-inner {
+    padding: 0; }
+  .reviews__list-text {
+    font-size: 18px; }
+  .reviews__list-container .slick-dots li {
+    width: 20px;
+    height: 20px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 370px) {
@@ -635,7 +709,7 @@
     body:before {
       background: url("../img/bg2-320.jpg") no-repeat center top;
         background-size: cover;
-      height: 2677px; }
+      height: 3977px; }
   .btn {
     padding: 11px 18px;
     font-size: 8.5px; }
@@ -852,11 +926,11 @@
     margin: 0 0 5px; }
     .list-dots li:before {
       font-size: 14px; }
-  footer {
-    margin: 0 0 319px; }
-    footer .box-text {
+  .footer {
+    margin: 0 0 60px; }
+    .footer .box-text {
       margin: 21px auto 55px; }
-    footer h3 {
+    .footer h3 {
       font-size: 24px; }
   .list-social li {
     margin: 0 15px 0 0; }
@@ -868,4 +942,11 @@
   .modal__wrapper h2 {
     font-size: 23px; }
   .modal__wrapper .box-text {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .payment-error {
+    padding: 30px;
+    font-size: 22px; }
+  .link-message {
+    font-size: 11px; }
+    .link-message img {
+      width: 20px; } }
